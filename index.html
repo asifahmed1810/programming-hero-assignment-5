@@ -22,10 +22,11 @@
 </head>
 
 <body>
-    <header>
-        <div class="flex justify-around   font-lexend lg:text-xl lg:h-[138px] max-sm:h-[80px] bg-[#F9F7F3]">
+    <header class="sticky top-0 z-10  bg-white ">
+
+        <div class="  flex justify-around   font-lexend lg:text-xl lg:h-[138px] max-sm:h-[80px] bg-[#F9F7F3]  ">
             <div class="lg:mt-6">
-                <button class="btn lg:text-xl max-sm:mt-1 bg-[#B4F461]">Blog</button>
+                <button id="blog-btn" class="btn lg:text-xl max-sm:mt-1 bg-[#B4F461]">Blog</button>
             </div>
             <div class="flex lg:mt-5">
                 <span><img class="lg:h-[48px] lg:w-[48px]" src="assets/logo.png" alt=""></span>
@@ -38,20 +39,23 @@
             </div>
         </div>
 
-    </header>
-
-    <main class="font-lexend">
-        <section class="flex lg:mt-[80px] max-sm:mt-10 justify-center font-lexend ">
-            <div>
+        <div class="flex lg:mt-[20px] max-sm:mt-10 justify-center font-lexend h-[80px]  ">
+            <div class="">
                 <button class="btn bg-[#B4F461] lg:text-xl">Donation</button>
             </div>
             <div class="ml-4">
                 <button class="btn bg-white lg:text-xl">History</button>
             </div>
-        </section>
+        </div>
 
 
-        <section class="lg:w-[1140px] lg:h-[475px] mx-auto mt-8">
+    </header>
+
+    <main class="font-lexend ">
+
+
+
+        <section class="lg:w-[1140px] lg:h-[475px] mx-auto mt-16">
             <div class="card lg:card-side bg-base-100 border border-gray-200 ">
                 <div class="max-sm:p-5">
                     <img class=" lg:p-6  rounded-sm" src="assets/noakhali.png" alt="" />
@@ -59,7 +63,7 @@
                 <div class="card-body lg:w-[522px] lg:h-[236px]  ">
                     <div class="flex bg-[#1111110D] h-[44px] w-[160px]  p-4 items-center rounded-xl">
                         <span><img src="assets/coin.png" alt=""></span>
-                        <h3 class="ml-2">0</h3>
+                        <h3 id="show-balance-1" class="ml-2">0</h3>
                         <span class="ml-1">BDT</span>
                     </div>
                     <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
@@ -68,9 +72,9 @@
                         contribution, big or small, makes difference. Please join us in supporting the relief efforts
                         and making a positive impact on the lives of those in need.</p>
                     <div class="">
-                        <input class="w-full my-4 h-[56px] p-4 border border-gray-200 rounded-lg" type="text"
+                        <input id="add-input-1" class="w-full my-4 h-[56px] p-4 border border-gray-200 rounded-lg" type="text"
                             placeholder="Write Donation Amount">
-                        <button class="btn w-full bg-[#B4F461]">Donate Now</button>
+                        <button id="add-btn-1" class="btn w-full bg-[#B4F461]">Donate Now</button>
                     </div>
                 </div>
             </div>
@@ -85,7 +89,7 @@
                 <div class="card-body lg:w-[522px] lg:h-[236px]  ">
                     <div class="flex bg-[#1111110D] h-[44px] w-[160px]  p-4 items-center rounded-xl">
                         <span><img src="assets/coin.png" alt=""></span>
-                        <h3 class="ml-2">600</h3>
+                        <h3 id="show-balance-2" class="ml-2">600</h3>
                         <span class="ml-1">BDT</span>
                     </div>
                     <h2 class="card-title">Donate for Flood Relief in Feni,Bangladesh</h2>
@@ -95,9 +99,9 @@
                         help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a
                         real difference. Please consider donating today to assist those in urgent need.</p>
                     <div class="">
-                        <input class="w-full my-4 h-[56px] p-4 border border-gray-200 rounded-lg" type="text"
+                        <input id="add-input-2" class="w-full my-4 h-[56px] p-4 border border-gray-200 rounded-lg" type="text"
                             placeholder="Write Donation Amount">
-                        <button class="btn w-full bg-[#B4F461]">Donate Now</button>
+                        <button id="add-btn-2" class="btn w-full bg-[#B4F461]">Donate Now</button>
                     </div>
                 </div>
             </div>
@@ -111,7 +115,7 @@
                 <div class="card-body lg:w-[522px] lg:h-[236px]  ">
                     <div class="flex bg-[#1111110D] h-[44px] w-[160px]  p-4 items-center rounded-xl">
                         <span><img src="assets/coin.png" alt=""></span>
-                        <h3 class="ml-2">2400</h3>
+                        <h3 id="show-balance-3" class="ml-2">2400</h3>
                         <span class="ml-1">BDT</span>
                     </div>
                     <h2 class="card-title">Aid for Injured in the Quota Movement</h2>
@@ -122,9 +126,9 @@
                         vital role in alleviating their suffering and aiding in their recovery. Please consider making a
                         donation to support these brave individuals in their time of need.</p>
                     <div class="">
-                        <input class="w-full my-4 h-[56px] p-4 border border-gray-200 rounded-lg" type="text"
+                        <input id="add-input-3" class="w-full my-4 h-[56px] p-4 border border-gray-200 rounded-lg" type="text"
                             placeholder="Write Donation Amount">
-                        <button class="btn w-full bg-[#B4F461]">Donate Now</button>
+                        <button id="add-btn-3" class="btn w-full bg-[#B4F461]">Donate Now</button>
                     </div>
                 </div>
             </div>
@@ -139,6 +143,11 @@
         </div>
 
     </footer>
+
+
+    <script src="js/blog.js"></script>
+    <script src="js/add-money.js"></script>
+
 
 </body>
 
