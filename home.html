@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d6e06ee1d6.js" crossorigin="anonymous"></script>
 
     <style>
         .font-lexend {
@@ -29,7 +30,7 @@
             </div>
             <div class="flex lg:mt-5">
                 <span><img class="lg:h-[48px] lg:w-[48px]" src="assets/logo.png" alt=""></span>
-                <h3 class="ml-4 mt-3 font-bold">Donate Bangladesh</h3>
+                <h3 class="ml-4 mt-3 font-bold max-sm:hidden">Donate Bangladesh</h3>
             </div>
             <div class="flex lg:mt-7 max-sm:mt-3">
                 <span><img src="assets/coin.png" alt=""></span>
@@ -51,8 +52,53 @@
     </header>
 
 
-    <main>
-        <h3 class="text-3xl font-lexend">IMPORTANT FAQ</h3>
+    <main class="max-w-screen-xl mx-auto font-lexend max-sm:p-5">
+        <h3 class="text-4xl font-lexend my-10 font-extrabold ">IMPORTANT FAQ <i class="fa-solid fa-question"></i></h3>
+
+        <section>
+            <div class="join join-vertical w-full">
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" checked="checked" />
+                    <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+                    <div class="collapse-content">
+                        <p>DOM, or Document Object Model, is a programming interface that represents structured
+                            documents like HTML and XML as a tree of objects. It defines how to access, manipulate, and
+                            modify document elements using scripting languages like JavaScript.</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                    <div class="collapse-content">
+                        <p>In JavaScript, there are several ways to select elements from the DOM (Document Object
+                            Model). Most common methods are getElementById(),getElementsByClassName(),
+                            querySelector(),querySelectorAll()
+                        </p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM,
+                        and why is it useful?</div>
+                    <div class="collapse-content">
+                        <p>Event delegation is a design pattern in JavaScript used to efficiently manage and handle
+                            events on multiple child elements by attaching a single event listener to a common ancestor
+                            element.</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and
+                        styles using the DOM?</div>
+                    <div class="collapse-content">
+                        <p>We can manipulate an element's attributes using getAttribute(), setAttribute(),
+                            removeAttribute(), and hasAttribute(). And We can modify individual inline styles with the
+                            style property, or manage multiple styles by adding/removing CSS classes via classList.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
 

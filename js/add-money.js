@@ -48,6 +48,25 @@ document.getElementById('add-btn-1').addEventListener('click', function (event) 
         document.getElementById('show-balance-1').innerText = newbalance1;
 
         document.getElementById('main-balance').innerText = newMainbalance;
+
+        const p = document.createElement('p');
+
+
+        const dateTime = new Date();
+        const currentDate = dateTime.toLocaleDateString();
+        const currentTime = dateTime.toLocaleTimeString();
+
+
+        p.innerHTML = `<p  class="text-xl my-5 p-5 border border-gray-200 rounded-xl">${input1} Taka is Donated for Flood relief in Noakhali,Bangladesh <br>
+          Date: ${currentDate}  ${currentTime}  GMT +0600 (Bangladesh Standard Time)</p>`
+
+        document.getElementById('history-text').innerText = '';
+
+        document.getElementById('history-container').appendChild(p);
+        document.getElementById('history-text').classList.add('hidden');
+
+
+
         if (input1 > 0 && input1 < newMainbalance) {
 
             return my_modal_1.showModal();
@@ -80,6 +99,23 @@ document.getElementById('add-btn-2').addEventListener('click', function (event) 
         document.getElementById('show-balance-2').innerText = newbalance2;
 
         document.getElementById('main-balance').innerText = newMainbalance;
+        const p = document.createElement('p');
+
+
+        const dateTime = new Date();
+        const currentDate = dateTime.toLocaleDateString();
+        const currentTime = dateTime.toLocaleTimeString();
+
+
+        p.innerHTML = `<p  class="text-xl my-5 p-5 border border-gray-200 rounded-xl">${input2} Taka is Donated for Flood relief in Feni,Bangladesh <br>
+          Date: ${currentDate}  ${currentTime}  GMT +0600 (Bangladesh Standard Time)</p>`
+
+        document.getElementById('history-text').innerText = '';
+
+        document.getElementById('history-container').appendChild(p);
+        document.getElementById('history-text').classList.add('hidden');
+
+
         if (input2 > 0 && input2 < newMainbalance) {
 
             return my_modal_1.showModal();
@@ -113,6 +149,22 @@ document.getElementById('add-btn-3').addEventListener('click', function (event) 
         document.getElementById('show-balance-3').innerText = newbalance3;
 
         document.getElementById('main-balance').innerText = newMainbalance;
+
+        const p = document.createElement('p');
+
+
+        const dateTime = new Date();
+        const currentDate = dateTime.toLocaleDateString();
+        const currentTime = dateTime.toLocaleTimeString();
+
+
+        p.innerHTML = `<p  class="text-xl my-5 p-5 border border-gray-200 rounded-xl">${input3} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh<br>
+          Date: ${currentDate}  ${currentTime}  GMT +0600 (Bangladesh Standard Time)</p>`
+
+        document.getElementById('history-text').innerText = '';
+
+        document.getElementById('history-container').appendChild(p);
+        document.getElementById('history-text').classList.add('hidden');
 
         if (input3 > 0 && input3 < newMainbalance) {
 
