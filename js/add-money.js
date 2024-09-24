@@ -36,8 +36,8 @@ document.getElementById('add-btn-1').addEventListener('click', function (event) 
 
     const mainBalance = showBalancebyId('main-balance');
     const newMainbalance = mainBalance - input1;
-
-    if (input1 <= 0 || isNaN(input1)) {
+ 
+    if (input1 <= 0 || isNaN(input1)  ){
         return alert('Invalid Donation Amount');
     } else if (newMainbalance < 0) {
         return alert('Insufficient Balance')
