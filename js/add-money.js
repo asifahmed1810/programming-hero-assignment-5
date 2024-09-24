@@ -124,6 +124,6 @@ document.getElementById('add-btn-3').addEventListener('click', function (event) 
 
 // ------------------------------------------------------------------------------------------------------
 
-document.getElementById('blog-btn').addEventListener('click', function(){
-    window.location.href='/home.html';
-});
+// document.getElementById('blog-btn').addEventListener('click', function(){
+//     window.location.href='/home.html';
+// });
